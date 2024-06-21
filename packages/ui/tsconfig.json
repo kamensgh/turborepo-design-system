@@ -1,5 +1,12 @@
 {
   "extends": "@repo/typescript-config/react-library.json",
   "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+  "exclude": ["dist", "build", "node_modules"],
+  "types": ["vitest/globals"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/components/*"]
+    }
+  }
 }

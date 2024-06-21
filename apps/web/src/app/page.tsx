@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card } from "@repo/ui/card";
+import { Card, Button } from "@repo/ui/index";
 
 function Gradient({
   conic,
@@ -58,7 +58,7 @@ export default function Page(): JSX.Element {
             rel="noopener noreferrer"
             target="_blank"
           >
-            By{" "}
+            By{' '}
             <Image
               alt="Vercel Logo"
               className="invert"
@@ -124,6 +124,9 @@ export default function Page(): JSX.Element {
             </svg>
           </div>
         </div>
+      </div>
+      <div className="ui-mb-3 ui-mt-3 mt-3">
+        <Button variant="primary" size="">Button Label</Button>
       </div>
 
       <div className="grid mb-32 text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">

@@ -6,27 +6,57 @@
   ],
   "exports": {
     "./styles.css": "./dist/index.css",
-    "./card": "./src/card.tsx"
+    "./index": "./src/index.tsx"
   },
   "license": "MIT",
   "scripts": {
     "build": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
     "lint": "eslint src/",
     "dev": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test": "vitest",
+    "test:ui": "vitest --ui"
   },
   "peerDependencies": {
     "react": "^18.2.0"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.5.0",
     "@repo/eslint-config": "*",
     "@repo/tailwind-config": "*",
     "@repo/typescript-config": "*",
+    "@storybook/addon-essentials": "^8.1.10",
+    "@storybook/addon-interactions": "^8.1.10",
+    "@storybook/addon-links": "^8.1.10",
+    "@storybook/addon-onboarding": "^8.1.10",
+    "@storybook/blocks": "^8.1.10",
+    "@storybook/react": "^8.1.10",
+    "@storybook/react-vite": "^8.1.10",
+    "@storybook/test": "^8.1.10",
+    "@testing-library/dom": "^10.1.0",
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "14.2.0",
     "@types/react": "^18.2.61",
+    "@vitest/ui": "^1.6.0",
     "autoprefixer": "^10.4.18",
+    "eslint-plugin-storybook": "^0.8.0",
+    "jsdom": "^24.1.0",
     "postcss": "^8.4.35",
     "react": "^18.2.0",
+    "storybook": "^8.1.10",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.395.0",
+    "tailwind-merge": "^2.3.0",
+    "tailwind-variants": "^0.2.1",
+    "tailwindcss-animate": "^1.0.7",
+    "vitest": "^1.6.0"
   }
 }

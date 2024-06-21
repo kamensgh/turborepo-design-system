@@ -1,0 +1,82 @@
+import { Button } from "@repo/ui/index";
+
+# Button
+
+Button is an interactive component that allows the user to execute an action. There are various button variants, primary (default), success, danger. You can display a button with or without a text or icon, and in various states.
+
+
+## Primary
+
+Use the primary button for high-priority actions. They represent the default or expected action on the page. For example, a CTA button to prompt a user to register, sign up, submit or buy.
+
+
+
+:::code-group
+
+<div data-title="Preview">
+
+  <Button variant="primary">Button Label</Button>
+
+</div>
+ 
+```bash [Code]
+import { ReactElement } from "react";
+import { Button } from "@repo/ui/index";
+
+export const Primary = (): ReactElement => (
+  <Button variant="primary" isPending={true} disabled>Button Label</Button>
+);
+
+```
+ 
+:::
+
+
+
+## Secondary
+
+:::code-group
+
+<div data-title="Preview">
+
+  <Button variant="secondary">Button Label</Button>
+
+</div>
+ 
+```bash [Code]
+import { ReactElement } from "react";
+import { Button } from "@repo/ui/index";
+
+export const Secondary = (): ReactElement => (
+  <Button variant="secondary">Button Label</Button>
+);
+
+```
+ 
+:::
+
+
+
+## Danger
+
+Use the danger button for critical actions.
+
+:::code-group
+
+<div data-title="Preview">
+
+  <Button variant="danger">Button Label</Button>
+
+</div>
+ 
+```bash [Code]
+import { ReactElement } from "react";
+import { Button } from "@repo/ui/index";
+
+export const Danger = (): ReactElement => (
+  <Button variant="danger">Button Label</Button>
+);
+
+```
+ 
+:::
